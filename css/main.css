@@ -657,9 +657,9 @@ img {
 }
 
 .footer-list__location {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   text-decoration: none;

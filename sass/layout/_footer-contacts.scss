@@ -6,9 +6,10 @@
 }
 
 .footer-list__location {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 400, 24px);
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     text-decoration: none;
