@@ -1,0 +1,78 @@
+.section-team {
+    background-color: var(--team-color);
+}
+
+.team-list__container {
+    padding: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item {
+    background-color: var(--secondary-color);
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.team-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.section-team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-list__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-list__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.account-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.account-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color var(--o-transition-dur-and-funk),
+        color var(--o-transition-dur-and-funk);
+
+    &:hover,
+    &:focus {
+     background-color: var(--accent-color);
+     color: var(--secondary-color);
+            }
+    
+}
+
+
+.account-list__icon {
+    fill: #afb1b8;
+    transition: fill var(--o-transition-dur-and-funk);
+
+.account-list__link:hover &,
+ .account-list__link:focus & {
+fill: var(--secondary-color);
+            }
+}

@@ -1,0 +1,37 @@
+.work-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.section-work {
+    padding-top: 0;
+}
+
+.work-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.section-work__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work-list__container {
+    position: relative;
+}
+
+.work-list__container-text {
+    width: 100%;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 27px 0px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background: rgba(47, 48, 58, 0.8);
+}

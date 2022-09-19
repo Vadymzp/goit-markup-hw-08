@@ -1,0 +1,48 @@
+
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: var(--o-transition-dur-and-funk);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px 39px;
+}
+.modal-close__icon {
+    transition: var(--o-transition-dur-and-funk);
+
+    .modal__close:focus & {
+            fill: var(--accent-color);
+            padding: 0;
+        }
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+        }
+}
+
