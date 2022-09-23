@@ -1,21 +1,20 @@
 .container-link {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .container-footer {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .container-join {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer {
-    background-color: var(--hero-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
