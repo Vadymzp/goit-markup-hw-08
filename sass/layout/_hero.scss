@@ -1,6 +1,6 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -12,19 +12,19 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  
 }
-
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 30px;
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -37,8 +37,8 @@
   font-size: 16px;
   cursor: pointer;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
-  min-width: 216px;
+  padding: 10px 24px;
+  min-width: 200px;
   align-items: center;
   padding: 10px 32px;
   border: none;
@@ -51,3 +51,58 @@
     background-color: var(--button-color);
   }
 }
+
+// то что било
+// .hero {
+//   max-width: 1600px;
+//   height: 600px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-color: #c4c4c4;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url("../images/backhero1.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   text-align: center;
+//   padding-bottom: 200px;
+//   padding-top: 200px;
+// }
+
+// .hero__title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: var(--primary-text-color);
+//   margin-bottom: 30px;
+//   width: 696px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .hero__bth {
+//   position: relative;
+//   color: var(--primary-text-color);
+//   background-color: var(--accent-color);
+//   font-family: inherit;
+//   font-size: 16px;
+//   cursor: pointer;
+//   letter-spacing: 0.06em;
+//   padding: 10px 32px;
+//   min-width: 216px;
+//   align-items: center;
+//   padding: 10px 32px;
+//   border: none;
+//   height: 50px;
+//   border-radius: 4px;
+//   transition: background-color var(--o-transition-dur-and-funk);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--button-color);
+//   }
+// }
