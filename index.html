@@ -194,47 +194,57 @@
 
   <!-- секція чим ми займаємося -->
 
-  <!-- <section class="section section-work">
+   <section class="section section-work">
         <div class="container">
           <h2 class="section-work__title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <div class="work-list__container">
-                <img
-                  src="./images/box.jpg"
-                  alt="веб технології"
-                  width="370"
-                  loading="lazy"
+
+              <picture>
+                <source
+                  srcset="./images/desk-web/work/work-01.webp 1x, ./images/desk-web/work/work-01@2x.webp 2x"
+                  type="image/webp"
                 />
+                <img 
+                srcset="./images/desktop/work/work-01.jpg 1x, ./images/desktop/work/work-01@2x.jpg 2x"
+                src="./images/desktop/work/work-01.jpg" alt="вібір дизайну макета" 
+                />
+              </picture> 
+            
                 <div class="work-list__container-text">
                   <p class="work-list__text">Десктопні додатки</p>
-                </div>
               </div>
             </li>
             <li class="work-list__item">
-              <div class="work-list__container">
-                <img
-                  src="./images/box2.jpg"
-                  alt="адаптація для мобільних пристроїв"
-                  width="370"
-                  loading="lazy"
+               <picture>
+                <source
+                  srcset="./images/desk-web/work/work-02.webp 1x, ./images/desk-web/work/work-02@2x.webp 2x"
+                  type="image/webp"
                 />
+                <img 
+                srcset="./images/desktop/work/work-02.jpg 1x, ./images/desktop/work/work-02@2x.jpg 2x"
+                src="./images/desktop/work/work-02.jpg" alt="вібір дизайну макета" 
+                />
+              </picture> 
+      
                 <div class="work-list__container-text">
                   <p class="work-list__text">Мобільні додатки</p>
-                </div>
               </div>
             </li>
             <li class="work-list__item">
-              <div class="work-list__container">
-                <img
-                  src="./images/box3.jpg"
-                  alt="спільне середовище пк та мобільних пристороїв"
-                  width="370"
-                  loading="lazy"
+               <picture>
+                <source
+                  srcset="./images/desk-web/work/work-03.webp 1x, ./images/desk-web/work/work-03@2x.webp 2x"
+                  type="image/webp"
                 />
+                <img 
+                srcset="./images/desktop/work/work-03.jpg 1x, ./images/desktop/work/work-03@2x.jpg 2x"
+                src="./images/desktop/work/work-03.jpg" alt="вібір дизайну макета" 
+                />
+              </picture> 
                 <div class="work-list__container-text">
                   <p class="work-list__text">Дизайнерські рішення</p>
-                </div>
+
               </div>
             </li>
           </ul>
@@ -243,17 +253,42 @@
 
       <!-- секція наша команда -->
 
-  <!-- <section class="section-team section">
+    <section class="section-team section">
         <div class="container">
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                src="./images/demina.jpg"
-                alt="ігор демьяненко дизайнер"
-                width="270"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="./images/desk-web/team-member/team-member-01.webp 1x, ./images/desk-web/team-member/team-member-01@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/desk-web"
+                 />
+                 <source
+                 srcset="./images/desktop/team-member/team-member-01.jpg 1x, ./images/desktop/team-member/team-member-01@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                 />
+                 <source
+                 srcset="./images/tablet-web/team-member/team-member-01.webp 1x, ./images/tablet-web/team-member/team-member-01@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/tablet/team-member/team-member-01.jpg 1x, ./images/tablet/team-member/team-member-01@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                 />
+                 <source
+                 srcset="./images/mobile-web/team-member/team-member-01.webp 1x, ./images/mobile-web/team-member/team-member-01@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/mobile/team-member/team-member-01.jpg 1x, ./images/mobile/team-member/team-member-01@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                 />
+                 <img class="team-list__photo" src="./images/mobile/team-member/team-member-01.jpg" alt="Product Designer portrait"
+                 />
+             </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -311,12 +346,38 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./images/img1.jpg"
-                alt="ольга рєпіна розробник"
-                width="270"
-                loading="lazy"
-              />
+
+              <picture>
+                <source
+                  srcset="./images/desk-web/team-member/team-member-02.webp 1x, ./images/desk-web/team-member/team-member-02@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/desk-web"
+                 />
+                 <source
+                 srcset="./images/desktop/team-member/team-member-02.jpg 1x, ./images/desktop/team-member/team-member-02@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                 />
+                 <source
+                 srcset="./images/tablet-web/team-member/team-member-02.webp 1x, ./images/tablet-web/team-member/team-member-02@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/tablet/team-member/team-member-02.jpg 1x, ./images/tablet/team-member/team-member-02@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                 />
+                 <source
+                 srcset="./images/mobile-web/team-member/team-member-02.webp 1x, ./images/mobile-web/team-member/team-member-02@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/mobile/team-member/team-member-02.jpg 1x, ./images/mobile/team-member/team-member-02@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                 />
+                 <img class="team-list__photo" src="./images/mobile/team-member/team-member-02.jpg" alt="Product Designer portrait"
+                 />
+             </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -374,12 +435,37 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./images/tarasov.jpg"
-                alt="микола тарасов маркетолог"
-                width="270"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="./images/desk-web/team-member/team-member-03.webp 1x, ./images/desk-web/team-member/team-member-03@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/desk-web"
+                 />
+                 <source
+                 srcset="./images/desktop/team-member/team-member-03.jpg 1x, ./images/desktop/team-member/team-member-03@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                 />
+                 <source
+                 srcset="./images/tablet-web/team-member/team-member-03.webp 1x, ./images/tablet-web/team-member/team-member-03@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/tablet/team-member/team-member-03.jpg 1x, ./images/tablet/team-member/team-member-03@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                 />
+                 <source
+                 srcset="./images/mobile-web/team-member/team-member-03.webp 1x, ./images/mobile-web/team-member/team-member-03@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/mobile/team-member/team-member-03.jpg 1x, ./images/mobile/team-member/team-member-03@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                 />
+                 <img class="team-list__photo" src="./images/mobile/team-member/team-member-03.jpg" alt="Product Designer portrait"
+                 />
+             </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -437,12 +523,37 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./images/ermakov.jpg"
-                alt="Михайло Єрмаков веб дизайнер"
-                width="270"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="./images/desk-web/team-member/team-member-04.webp 1x, ./images/desk-web/team-member/team-member-04@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/desk-web"
+                 />
+                 <source
+                 srcset="./images/desktop/team-member/team-member-04.jpg 1x, ./images/desktop/team-member/team-member-04@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                 />
+                 <source
+                 srcset="./images/tablet-web/team-member/team-member-04.webp 1x, ./images/tablet-web/team-member/team-member-04@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/tablet/team-member/team-member-04.jpg 1x, ./images/tablet/team-member/team-member-04@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                 />
+                 <source
+                 srcset="./images/mobile-web/team-member/team-member-04.webp 1x, ./images/mobile-web/team-member/team-member-04@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                 />
+                 <source
+                 srcset="./images/mobile/team-member/team-member-04.jpg 1x, ./images/mobile/team-member/team-member-04@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                 />
+                 <img class="team-list__photo" src="./images/mobile/team-member/team-member-04.jpg" alt="Product Designer portrait"
+                 />
+             </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -500,11 +611,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
-  -->
+      </section>
+
 
   <!-- секція постійні клієнти -->
-  <!-- 
+
       <section class="section">
         <div class="container">
           <h2 class="section-team__title">Постійні клієнти</h2>
@@ -584,11 +695,11 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
   <!-- футер -->
 
-  <!-- <footer class="footer">
+   <footer class="footer">
       <div class="container container-link">
         <div class="container-footer">
           <a href="./index.html" class="footer-logo">Web</a
@@ -684,7 +795,7 @@
           </button>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
   <!-- кнопка закрити -->
 

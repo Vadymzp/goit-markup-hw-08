@@ -2,21 +2,35 @@
   background-color: var(--team-color);
 }
 
-.team-list__container {
-  padding: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 
 .team-list__item {
-  background-color: var(--secondary-color);
+  display: inline-block;
   flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.team-list__container {
+  padding: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.team-list__photo {
+  @media screen and (max-width: 480px) {
+  max-width: 100%;
+height: auto;
+  }
 }
 
 .section-team__title {
