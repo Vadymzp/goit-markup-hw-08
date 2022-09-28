@@ -13,18 +13,14 @@
 }
 
 .accent {
-    font-family: "Raleway";
-    color: #000000;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
+    color: #212121;
 }
+
 .footer-logo {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    line-height: 1.2;
     color: var(--accent-color);
     text-decoration: none;
     transition: var(--o-transition-dur-and-funk);
@@ -34,7 +30,6 @@
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    line-height: 1.2;
     color: var(--secondary-color);
 }
