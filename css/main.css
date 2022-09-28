@@ -906,14 +906,6 @@ img {
   color: var(--accent-color);
 }
 
-.footer-list__item {
-  margin-bottom: 9px;
-}
-
-.footer-list__item {
-  margin-bottom: 9px;
-}
-
 .sites-link {
   display: flex;
 }
@@ -960,6 +952,14 @@ img {
   color: var(--secondary-color);
   margin-bottom: 20px;
   font-weight: 700;
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
 }
 
 .form-for-input {
@@ -1028,6 +1028,88 @@ footer-form-sign-up__iconicon-send {
   font-size: 14px;
   line-height: 1.33;
   text-transform: uppercase;
+}
+
+.sites-link {
+  display: flex;
+}
+
+.footer-join-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.footer-join-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--o-transition-dur-and-funk), fill var(--o-transition-dur-and-funk);
+}
+.footer-join-list__link:hover, .footer-join-list__link:focus {
+  background-color: var(--accent-color);
+  fill: var(--secondary-color);
+}
+
+.container-join__text {
+  text-align: center;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-join-list__icon {
+  display: flex;
+  fill: var(--secondary-color);
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-adress {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-list__location {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-list__contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--o-transition-dur-and-funk);
+}
+.footer-list__contacts:hover, .footer-list__contacts:focus {
+  color: var(--accent-color);
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
+}
+
+.footer-list__item {
+  margin-bottom: 9px;
 }
 
 .menu-filter__btn {
