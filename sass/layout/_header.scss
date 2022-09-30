@@ -14,18 +14,18 @@
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .main-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .header-nav__list {
     display: flex;
+    gap: 50px;
   }
 
   .contacts-list {
@@ -66,7 +66,7 @@
 
   .main-header {
     border-bottom: 1px solid #ececec;
-    padding: 24px 0;
+    padding: 21px 0;
   }
 
   .header-container {
@@ -129,9 +129,11 @@
 
 @media screen and (min-width: 1200px) {
   .contacts-list{
+    margin-left: auto;
     display: flex;
     flex-direction: row;
   }
+  
 }
 
 // то что біло

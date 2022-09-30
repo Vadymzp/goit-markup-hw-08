@@ -27,55 +27,83 @@
       <div class="container header-container">
         <nav class="header-nav">
           <div class="logo-container">
-            <a href="./index.html" class="logo">Web</a
-            ><span class="accent">Studio</span>
+            <a href="./index.html" class="logo">Web</a><span class="logo accent">Studio</span>
           </div>
-
+  
+          <!-- Хедер нав -->
+  
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link">Студія</a>
+              <a href="./index.html" class="header-nav__link ">Студія</a>
             </li>
             <li class="header-nav__item">
-              <a
-                href="./portfolio.html"
-                class="header-nav__link header-nav_link_current"
-                >Портфоліо</a
-              >
+              <a href="" class="header-nav__link header-nav_link_current">Портфоліо</a>
             </li>
             <li class="header-nav__item">
               <a href="" class="header-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="main-header__open-mobile-btn" data-menu-open>
+          <svg aria-label="іконка мобільного меню" width="40" height="40" class="main-header__open-mobile-icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts-list">
           <li class="contacts-list__item">
             <a href="malito:info@devstudio.com" class="contacts-list__link">
-              <svg
-                aria-label="іконка імейла"
-                width="16"
-                height="12"
-                class="contacts-list__icon"
-              >
+              <svg aria-label="іконка імейла" width="16" height="12" class="contacts-list__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-
           <li class="menu-list__item">
             <a href="tel:+380961111111" class="contacts-list__link">
-              <svg
-                aria-label="іконка телефону"
-                width="10"
-                height="16"
-                class="contacts-list__icon"
-              >
+              <svg aria-label="іконка телефону" width="10" height="16" class="contacts-list__icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
+      </div>
+       <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          <ul class="mobile-menu__list">
+            <li class="" mobile-menu__item">
+              <a href="" class=" mobile-menu-list__link ">Студія</a>
+            </li>
+            <li class="" mobile-menu__item">
+              <a href="./portfolio.html" class=" mobile-menu-list__link header-nav_link_current">Портфоліо</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="" class=" mobile-menu-list__link">Контакти</a>
+            </li>
+          </ul>
+            <div class="mobile-contacts-container">
+          <ul class="mobile-contacts-list">
+            <li class="mobile-contacts__item">
+              <a href="malito:info@devstudio.com" class="mobile-contacts__link-email"> info@devstudio.com
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-sites-list">
+            <li class="mobile-sites-list__item"><a href="" class="mobile-sites-list__link">Instagram</a></li>
+            <li class="mobile-sites-list__item"><a href="" class="mobile-sites-list__link">Twitter</a></li>
+            <li class="mobile-sites-list__item"><a href="" class="mobile-sites-list__link">Facebook</a></li>
+            <li class="mobile-sites-list__item"><a href="" class="mobile-sites-list__link">LinkedIn</a></li>
+          </ul>
+        </div>
+        </div>
       </div>
     </header>
 
@@ -110,12 +138,27 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgtechno.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-01.webp 1x, ./images/desk-web/product/product-01@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-01.jpg 1x, ./images/desktop/product/product-01@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-01.webp 1x, ./images/tablet-web/product/product-01@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-01.jpg  1x, ./images/tablet/product/product-01@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-01.web 1x, ./images/mobile-web/product/product-01@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-01.jpg 1x, ./images/mobile/product/product-01@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="" src="./images/mobile/product" alt="Ноутбук" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -132,12 +175,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgbasket.jpg"
-                    alt="Дизайн"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-02.webp 1x, ./images/desk-web/product/product-02@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-02.jpg 1x, ./images/desktop/product/product-02@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-02.webp 1x, ./images/tablet-web/product/product-02@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-02.jpg  1x, ./images/tablet/product/product-02@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-02.web 1x, ./images/mobile-web/product/product-02@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-02.jpg 1x, ./images/mobile/product/product-02@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -155,12 +212,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgseafood.jpg"
-                    alt="Додаток"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-03.webp 1x, ./images/desk-web/product/product-03@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-03.jpg 1x, ./images/desktop/product/product-03@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-03.webp 1x, ./images/tablet-web/product/product-03@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-03.jpg  1x, ./images/tablet/product/product-03@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-03.web 1x, ./images/mobile-web/product/product-03@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-03.jpg 1x, ./images/mobile/product/product-03@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -176,12 +247,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgheadphones.jpg"
-                    alt="Маркетинг"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-04.webp 1x, ./images/desk-web/product/product-04@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-04.jpg 1x, ./images/desktop/product/product-04@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-04.webp 1x, ./images/tablet-web/product/product-04@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-04.jpg  1x, ./images/tablet/product/product-04@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-04.web 1x, ./images/mobile-web/product/product-04@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-04.jpg 1x, ./images/mobile/product/product-04@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -197,12 +282,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgbox.jpg"
-                    alt="Додаток"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-05.webp 1x, ./images/desk-web/product/product-05@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-05.jpg 1x, ./images/desktop/product/product-05@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-05.webp 1x, ./images/tablet-web/product/product-05@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-05.jpg  1x, ./images/tablet/product/product-05@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-05.web 1x, ./images/mobile-web/product/product-05@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-05.jpg 1x, ./images/mobile/product/product-05@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -218,12 +317,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgmon.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-06.webp 1x, ./images/desk-web/product/product-06@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-06.jpg 1x, ./images/desktop/product/product-06@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-06.webp 1x, ./images/tablet-web/product/product-06@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-06.jpg  1x, ./images/tablet/product/product-06@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-06.web 1x, ./images/mobile-web/product/product-06@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-06.jpg 1x, ./images/mobile/product/product-06@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -241,12 +354,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgjour.jpg"
-                    alt="Дизайн"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-07.webp 1x, ./images/desk-web/product/product-07@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-07.jpg 1x, ./images/desktop/product/product-07@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-07.webp 1x, ./images/tablet-web/product/product-07@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-07.jpg  1x, ./images/tablet/product/product-07@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-07.web 1x, ./images/mobile-web/product/product-07@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-07.jpg 1x, ./images/mobile/product/product-07@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -262,12 +389,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgproject.jpg"
-                    alt="Маркетинг"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-08.webp 1x, ./images/desk-web/product/product-08@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-08.jpg 1x, ./images/desktop/product/product-08@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-08.webp 1x, ./images/tablet-web/product/product-08@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-08.jpg  1x, ./images/tablet/product/product-08@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-08.web 1x, ./images/mobile-web/product/product-08@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-08.jpg 1x, ./images/mobile/product/product-08@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -283,12 +424,26 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__wraper-img">
-                  <img
-                    src="./images/imgadd.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk-web/product/product-09.webp 1x, ./images/desk-web/product/product-09@2x.webp 2x"
+                      media="(min-width: 1200px)" type="./images/desk-web" />
+                    <source
+                      srcset="./images/desktop/product/product-09.jpg 1x, ./images/desktop/product/product-09@2x.jpg 2x"
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="./images/tablet-web/product/product-09.webp 1x, ./images/tablet-web/product/product-09@2x.webp 2x"
+                      media="(min-width: 768px)" type="./images/tablet-web" />
+                    <source
+                      srcset="./images/tablet/product/product-09.jpg  1x, ./images/tablet/product/product-09@2x.jpg 2x"
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="./images/mobile-web/product/product-09.web 1x, ./images/mobile-web/product/product-09@2x.web 2x"
+                      media="(max-width: 767px)" type="/images/mobile-web" />
+                    <source
+                      srcset="./images/mobile/product/product-09.jpg 1x, ./images/mobile/product/product-09@2x.jpg 2x"
+                      media="(max-width: 767px)" />
+                    <img class="project-picture" src="./images/mobile/product" alt="Ноутбук" />
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -405,6 +560,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

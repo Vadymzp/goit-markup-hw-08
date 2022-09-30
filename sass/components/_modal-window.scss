@@ -1,5 +1,35 @@
 
 
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px 39px;
+}
+.modal-close__icon {
+    transition: var(--o-transition-dur-and-funk);
+
+    .modal__close:focus & {
+            fill: var(--accent-color);
+            padding: 0;
+        }
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+        }
+}
+
+
+
+
+
+
+
 .modal__close {
     position: absolute;
     top: 8px;
@@ -23,26 +53,4 @@
 }
 
 
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 40px 39px;
-}
-.modal-close__icon {
-    transition: var(--o-transition-dur-and-funk);
-
-    .modal__close:focus & {
-            fill: var(--accent-color);
-            padding: 0;
-        }
-
-    &:hover,
-    &:focus {
-    fill: var(--accent-color);
-        }
-}
 
