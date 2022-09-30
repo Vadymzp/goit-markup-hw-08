@@ -1,9 +1,9 @@
-
 .footer {
   background-color: var(--hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .container {
   text-align: center;
 }
@@ -122,8 +122,9 @@
     outline: none;
   }
 }
+
 .footer-form-sign-up__btn-email {
-  
+
   display: flex;
   width: 200px;
   margin-left: auto;
@@ -147,6 +148,7 @@
     background-color: var(--button-color);
   }
 }
+
 .subcription-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -156,8 +158,8 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 768px) {
+
   .container-link {
     display: flex;
     flex-wrap: wrap;
@@ -165,14 +167,15 @@
     align-items: baseline;
     column-gap: 165px;
   }
+
   .footer-form-sign-up__email {
     width: 450px;
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
-  .footer-form-sign-up__text{
+  .footer-form-sign-up__text {
     text-align: left;
   }
 
@@ -181,44 +184,52 @@
     flex-wrap: nowrap;
     gap: 0;
   }
-  
+
+
 
   .footer-join-list {
     text-align: left;
     margin-bottom: 0px;
   }
+
   .footer-form-sign-up__email {
-    display: inline-block;
-      margin-bottom: 0;
-      margin-right: 12px;
-      width: 358px;
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
   }
-.container-join {
-  margin-right: auto;
-      margin-bottom: 0%;
-}
 
-.container-footer {
-  margin-right: 70px;
-}
+  .container-join {
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
+
+  .container-footer {
+    margin-right: 70px;
+  }
 
 
-.container-join {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.footer-form__wraper {
-  display: flex;
-}
-.container-footer {
-  align-items: center;
-}
 
-.container-link {
-  display: flex;
-  align-items: baseline;
-}
+
+
+  .container-join {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-form__wraper {
+    display: flex;
+  }
+
+  .container-footer {
+    align-items: center;
+  }
+
+  .container-link {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 

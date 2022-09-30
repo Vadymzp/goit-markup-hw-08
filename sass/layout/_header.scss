@@ -52,8 +52,9 @@
     align-items: center;
     transition: color var(--o-transition-dur-and-funk);
 
-    &:hover,
-    &:focus {
+
+    &:focus,
+    &:hover {
       color: var(--accent-color);
     }
   }
@@ -128,12 +129,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-list{
+  .contacts-list {
     margin-left: auto;
     display: flex;
     flex-direction: row;
   }
-  
+
 }
 
 // то что біло
