@@ -17,10 +17,7 @@
   justify-content: space-between;
 }
 
-.main-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
+
 
 @media screen and (min-width: 768px) {
   .header-nav__list {
@@ -67,7 +64,6 @@
 
   .main-header {
     border-bottom: 1px solid #ececec;
-    padding: 21px 0;
   }
 
   .header-container {

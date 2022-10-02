@@ -78,11 +78,6 @@ img {
   justify-content: space-between;
 }
 
-.main-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .header-nav__list {
     display: flex;
@@ -118,7 +113,6 @@ img {
   }
   .main-header {
     border-bottom: 1px solid #ececec;
-    padding: 21px 0;
   }
   .header-container {
     display: flex;
@@ -531,7 +525,7 @@ img {
   text-align: center;
 }
 
-.logo {
+.footer .logo {
   margin-bottom: 29px;
 }
 
@@ -687,7 +681,6 @@ img {
     text-align: left;
   }
   .container {
-    justify-content: start;
     flex-wrap: nowrap;
   }
   .footer-join-list {
@@ -891,12 +884,17 @@ img {
 
 .logo {
   font-family: "Raleway";
+  display: flex;
   color: var(--accent-color);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   transition: color var(--o-transition-dur-and-funk);
+}
+
+.main-header .logo {
+  padding: 16px 0;
 }
 
 .accent {
