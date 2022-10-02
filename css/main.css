@@ -883,6 +883,7 @@ img {
 
 .logo {
   font-family: "Raleway";
+  justify-content: center;
   display: flex;
   color: var(--accent-color);
   font-size: 26px;
@@ -890,6 +891,11 @@ img {
   line-height: 1.2;
   text-decoration: none;
   transition: color var(--o-transition-dur-and-funk);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    justify-content: flex-start;
+  }
 }
 
 .main-header .logo {

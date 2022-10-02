@@ -27,14 +27,14 @@
       <div class="container header-container">
         <nav class="header-nav">
           <div class="logo-container">
-            <a href="./index.html" class="logo">Web</a><span class="logo accent">Studio</span>
+            <a href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
           </div>
   
           <!-- Хедер нав -->
   
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="./index.html" class="header-nav__link ">Студія</a>
+              <a href="./index.html" class="header-nav__link">Студія</a>
             </li>
             <li class="header-nav__item">
               <a href="" class="header-nav__link header-nav_link_current">Портфоліо</a>
@@ -75,10 +75,10 @@
               </svg>
             </button>
           <ul class="mobile-menu__list">
-            <li class="" mobile-menu__item">
-              <a href="" class=" mobile-menu-list__link ">Студія</a>
+            <li class=" mobile-menu__item">
+              <a href="" class=" mobile-menu-list__link">Студія</a>
             </li>
-            <li class="" mobile-menu__item">
+            <li class="mobile-menu__item">
               <a href="./portfolio.html" class=" mobile-menu-list__link header-nav_link_current">Портфоліо</a>
             </li>
             <li class="header-nav__item">
@@ -88,11 +88,11 @@
             <div class="mobile-contacts-container">
           <ul class="mobile-contacts-list">
             <li class="mobile-contacts__item">
-              <a href="malito:info@devstudio.com" class="mobile-contacts__link-email"> info@devstudio.com
+              <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11
               </a>
             </li>
             <li class="menu-list__item">
-              <a href="tel:+380961111111" class="mobile-contacts__link"> +38 096 111 11 11
+              <a href="malito:info@devstudio.com" class="mobile-contacts__link-email"> info@devstudio.com
               </a>
             </li>
           </ul>
@@ -466,8 +466,8 @@
     <footer class="footer">
       <div class="container container-link">
         <div class="container-footer">
-          <a href="./index.html" class="footer-logo">Web</a
-          ><span class="footer-accent">Studio</span>
+          <a href="./index.html" class="logo">Web
+      <span class="logo footer-accent">Studio</span></a>
           <address class="footer-adress">
             <ul class="footer-list">
               <li class="footer-list__item">
@@ -542,8 +542,10 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form-sign-up">
+        <div class="footer-form-sign-up">
           <p class="footer-form-sign-up__text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <label>
           <input
             class="footer-form-sign-up__email"
             type="email"
@@ -551,6 +553,7 @@
             placeholder="E-mail"
             required
           />
+        </label>
           <button class="footer-form-sign-up__btn-email" type="submit">
             Підписатися
             <svg class="footer-form-sign-up__icon" width="24" height="24">
@@ -558,6 +561,8 @@
             </svg>
           </button>
         </form>
+        </div>
+    
       </div>
     </footer>
     <script src="./js/menu.js"></script>
