@@ -321,9 +321,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-work {
+  .section-work.section {
     display: block;
-    padding: 0;
+    padding-top: 0;
   }
   .work-list {
     display: flex;
@@ -526,10 +526,6 @@ img {
 
 .container {
   text-align: center;
-}
-
-.footer .logo {
-  margin-bottom: 29px;
 }
 
 .footer-list {
@@ -1018,6 +1014,11 @@ img {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal-form__check-field {
+    font-size: 14px;
+  }
+}
 
 .modal-form__own-checkbox {
   border: 1px solid #212121;
@@ -1084,6 +1085,12 @@ img {
   width: 100%;
   background-color: rgb(255, 255, 255);
   padding: 40px 39px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-width: none;
+  }
 }
 
 .modal-close__icon {
