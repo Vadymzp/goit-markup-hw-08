@@ -33,11 +33,10 @@
   height: 120px;
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-.about-list__icon {
-  width: 100%;
-}
+
 
 .about-list__text {
   line-height: 1.71;
