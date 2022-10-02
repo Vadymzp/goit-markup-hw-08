@@ -5,8 +5,9 @@
   gap: 30px;
 }
 .about-list__title {
-  @media screen and (max-width:768px) {
-    text-align: center;
+  text-align: center;
+  @media screen and (min-width:768px) {
+    text-align: start;
   }
 
   color: var(--secondary-text-color);
@@ -19,8 +20,10 @@
 .about-list__item {
   width: 100%;
 
+
   @media screen and (min-width:768px) {
     width: calc((100% - 30px) / 2);
+    text-align: start;
   }
 
   @media screen and (min-width:1200px) {

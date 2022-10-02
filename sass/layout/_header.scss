@@ -45,7 +45,6 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
-    margin-bottom: 10px;
     align-items: center;
     transition: color var(--o-transition-dur-and-funk);
 
@@ -79,6 +78,8 @@
 
   .header-nav .header-nav__link {
     padding-bottom: 32px;
+    padding-top: 32px;
+    display: flex;
     position: relative;
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -120,14 +121,14 @@
 
   .contacts-list {
     display: flex;
-    column-gap: 50px;
+   gap: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-list {
+    gap: 50px;
     margin-left: auto;
-    display: flex;
     flex-direction: row;
   }
 
