@@ -13,6 +13,7 @@ border-radius: 0px 0px 4px 4px;
 
 .team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -20,6 +21,7 @@ border-radius: 0px 0px 4px 4px;
 
 .team-list__container {
   padding: 30px;
+  background-color: var(--secondary-color);
   padding-bottom: 24px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 30px;

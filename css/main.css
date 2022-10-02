@@ -574,12 +574,12 @@ img {
   text-align: center;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   max-width: 480px;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -613,7 +613,8 @@ img {
     text-align: center;
   }
 }
-.hero .hero__title {
+
+.hero__title {
   max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -626,11 +627,9 @@ img {
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 30px;
-  width: 360px;
   margin-right: auto;
   margin-left: auto;
 }
-
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
@@ -638,6 +637,7 @@ img {
     line-height: 1.36;
   }
 }
+
 .about-list {
   display: flex;
   flex-wrap: wrap;
@@ -670,7 +670,8 @@ img {
     width: calc((100% - 90px) / 4);
   }
 }
-.about-list__item .about-list__container {
+
+.about-list__container {
   background-color: var(--team-color);
   max-width: 450px;
   height: 120px;
@@ -678,8 +679,14 @@ img {
   display: flex;
   align-items: center;
 }
-.about-list__item .about-list__icon {
+
+.about-list__icon {
   width: 100%;
+}
+
+.about-list__text {
+  line-height: 1.71;
+  color: var(--text-color);
 }
 
 .section-work {
@@ -733,12 +740,14 @@ img {
 
 .team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .team-list__container {
   padding: 30px;
+  background-color: var(--secondary-color);
   padding-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {

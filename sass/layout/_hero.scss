@@ -33,7 +33,7 @@
   background-image:linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../../images/hero-mobile.jpg);
+    url(../images/hero-mobile.jpg);
   max-width: 480px;
 
 
@@ -45,7 +45,7 @@
     background-image:linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-      url(../../images/hero-mobile@2x.jpg);
+      url(../images/hero-mobile@2x.jpg);
   }
 
   @media screen and (min-width:768px) {
@@ -91,7 +91,7 @@
   color:  #c4c4c4;
   text-align: center;
 }
-
+}
 .hero__title {
   max-width: 360px;
   margin-bottom: 30px;
@@ -105,19 +105,19 @@
       text-transform: uppercase;
       color: var(--primary-text-color);
       margin-bottom: 30px;
-      width: 360px;
       margin-right: auto;
       margin-left: auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
+    
+    @media screen and (min-width: 1200px) {
+ 
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    
   }
 }
+
+
 
 
 
