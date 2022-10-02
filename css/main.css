@@ -63,6 +63,10 @@ img {
   display: none;
 }
 
+.main-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .contacts-list {
   display: none;
 }
@@ -71,6 +75,9 @@ img {
   border: none;
   background-color: transparent;
   padding: 0;
+}
+.main-header__open-mobile-btn:focus, .main-header__open-mobile-btn:hover {
+  fill: var(--accent-color);
 }
 
 .header-container {
@@ -109,9 +116,6 @@ img {
   .contacts-list__icon {
     fill: currentColor;
     margin-right: 10px;
-  }
-  .main-header {
-    border-bottom: 1px solid #ececec;
   }
   .header-container {
     display: flex;
@@ -1101,6 +1105,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 528px;
     max-width: none;
   }
