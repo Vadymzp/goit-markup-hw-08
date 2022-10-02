@@ -521,6 +521,11 @@ img {
 .footer-form-sign-up {
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form-sign-up {
+    width: auto;
+  }
+}
 
 .container {
   text-align: center;
@@ -671,13 +676,19 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    gap: 10px;
+  }
+  .container-link {
+    justify-content: space-between;
+  }
   .footer-form-sign-up__text {
     text-align: left;
   }
   .container {
     justify-content: start;
     flex-wrap: nowrap;
-    gap: 0;
   }
   .footer-join-list {
     text-align: left;
@@ -686,15 +697,13 @@ img {
   .footer-form-sign-up__email {
     display: flex;
     margin-bottom: 0;
-    margin-right: 12px;
     width: 358px;
   }
   .container-join {
-    margin-right: auto;
     margin-bottom: 0%;
   }
   .container-footer {
-    margin-right: 70px;
+    text-align: start;
   }
   .container-join {
     display: flex;
