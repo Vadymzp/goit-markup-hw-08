@@ -895,6 +895,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition: opacity 250ms ease, visibility 250ms ease;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -988,6 +989,12 @@ img {
   margin-bottom: 30px;
   line-height: 1.71;
   color: var(--text-color);
+  font-size: 7px;
+}
+@media screen and (min-width: 480px) {
+  .modal-form__check-field {
+    font-size: 12px;
+  }
 }
 
 .modal-form__own-checkbox {
@@ -1048,10 +1055,11 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
+  transform: translateX(-50%);
+  max-width: 450px;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   padding: 40px 39px;
 }
@@ -1120,7 +1128,7 @@ img {
 .mobile-menu__container {
   position: relative;
   text-align: start;
-  padding: 40px 48px;
+  padding: 48px 40px;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -1174,12 +1182,7 @@ img {
   }
 }
 
-.mobile-menu__list {
-  padding-top: 40px;
-  margin-bottom: auto;
-}
-
-.mobile-menu-list__link {
+.mobile-menu__list .mobile-menu-list__link {
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
@@ -1188,7 +1191,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-menu-list__link:focus, .mobile-menu-list__link:hover {
+.mobile-menu__list .mobile-menu-list__link:focus, .mobile-menu__list .mobile-menu-list__link:hover {
   color: var(--accent-color);
 }
 
@@ -1221,6 +1224,20 @@ img {
   color: var(--accent-color);
 }
 
-.header-nav_link_current {
+.header-nav_link_current.mobile-menu-list__link {
   color: var(--accent-color);
+}
+
+.mobile-sites-list__item {
+  position: relative;
+}
+
+.mobile-sites-list__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
 }/*# sourceMappingURL=main.css.map */
