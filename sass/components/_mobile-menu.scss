@@ -70,6 +70,7 @@
 
 .mobile-contacts-list {
     margin-bottom: 64px;
+
 }
 
 .mobile-sites-list__link {
@@ -86,11 +87,7 @@
 }
 
 
-.mobile-menu__list
-
-
-
-.mobile-menu-list__link {
+.mobile-menu__list .mobile-menu-list__link {
     text-decoration: none;
     font-weight: 500;
     font-size: 40px;
@@ -127,12 +124,12 @@
     font-size: 26px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: var(--accent-color);
 
-@media screen and (min-width:480px) {
-    font-size: 34px;
-}
-    
+    @media screen and (min-width:480px) {
+        font-size: 34px;
+    }
+
 
 
     &:focus,
@@ -142,12 +139,15 @@
 
 
 }
+
 .header-nav_link_current.mobile-menu-list__link {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
+
 .mobile-sites-list__item {
     position: relative;
 }
+
 .mobile-sites-list__item:not(:last-child)::after {
     content: "";
     position: absolute;

@@ -1,20 +1,22 @@
-
 .about-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
+
 .about-list__title {
   text-align: center;
+
   @media screen and (min-width:768px) {
     text-align: start;
   }
 
   color: var(--secondary-text-color);
-      font-size: 14px;
-      line-height: 1.14;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .about-list__item {
@@ -30,6 +32,7 @@
     width: calc((100% - 90px) / 4);
   }
 }
+
 .about-list__container {
   background-color: var(--team-color);
   max-width: 450px;
@@ -93,5 +96,3 @@
 //   border-radius: 4px;
 //   background-color: #188ce8;
 // }
-
-
