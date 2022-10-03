@@ -1,167 +1,72 @@
-@media screen and (min-width: 320px) {
+.section-team__title {
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
-  .section-team__title {
-    margin-bottom: 30px;
-    color: var(--secondary-text-color);
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.client-list__item {
+  width: calc((100% - 30px)/ 2);
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  transition: border-color var(--o-transition-dur-and-funk);
+
+  &:hover .client-list__icon,
+  &:focus .client-list__icon {
+    fill: var(--accent-color);
   }
 
-  .client-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .client-list__item {
-    width: calc((100% - 30px)/ 2);
-  }
-
-  .client-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-function);
-
-    &:hover .client-list__icon,
-    &:focus .client-list__icon {
-      fill: var(--accent-color);
-    }
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-  }
-
-
-  .client-list__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-    transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
   }
 }
 
-@media screen and (min-width: 480px) {
 
-  .section-team__title {
-    margin-bottom: 30px;
-    color: var(--secondary-text-color);
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-
-  .client-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  .client-list__item {
-    width: 210px;
-  }
-
-  .client-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-function);
-
-    &:hover .client-list__icon,
-    &:focus .client-list__icon {
-      fill: var(--accent-color);
-    }
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-  }
-
-
-  .client-list__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-    transition: fill 250ms var(--timing-function);
-  }
+.client-list__icon {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  transition: fill 250ms var(--o-transition-dur-and-funk);
 }
+
+
 
 @media screen and (min-width: 768px) {
 
 
-  .section-team__title {
-    margin-bottom: 30px;
-    color: var(--secondary-text-color);
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-
-  .client-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
 
   .client-list__item {
     width: 226px;
   }
 
-  .client-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 226px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-function);
 
-    &:hover .client-list__icon,
-    &:focus .client-list__icon {
-      fill: var(--accent-color);
-    }
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-  }
-
-
-  .client-list__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-    transition: fill 250ms var(--timing-function);
-  }
 }
 
 @media screen and (min-width: 1200px) {
 
   .client-link__title {
     margin-bottom: 50px;
-    color: var(--secondary-text-color);
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+
   }
 
   .client-list {
@@ -174,34 +79,6 @@
     width: 170px;
   }
 
-  .client-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: border 250ms var(--timing-function);
-
-    &:hover .client-list__icon,
-    &:focus .client-list__icon {
-      fill: var(--accent-color);
-    }
-
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-  }
-
-
-  .client-list__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-    transition: fill 250ms var(--timing-function);
-  }
 }
 
 
